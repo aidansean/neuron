@@ -1,0 +1,74 @@
+
+table
+{
+  margin : auto ;
+  background-color : black ;
+}
+table.layout
+{
+  background-color : white ;
+}
+table#tablePop
+{
+  border : 1px solid #cccccc ;
+  width : 600px ;
+  background-color : white ;
+}
+table#tableFood, table#tableAverage
+{
+  width : 100px ;
+  border : 2px solid black ;
+  border-collapse : separate ;
+  background-color : black ;
+}
+td
+{
+  background-color : white ;
+  font-size : 0px; 
+  line-height : 0px ;
+  padding : 0px ;
+}
+h2
+{
+  font-family : georgia , serif ;
+  font-size : 20pt ;
+  font-style : italic ;
+  text-align : center ;
+  margin-top : 20px ;
+}
+div#iteratorCounter
+{
+  font-family : georgia , serif ;
+  font-size : 14pt ;
+  font-style : italic ;
+  text-align : center ;
+  margin-top : 20px ;
+}
+td.left
+{
+  width : 150px ;
+}
+td.right
+{
+  width : 750px ;
+}
+td
+{
+  vertical-align : top ;
+}
+
+div.table{
+  display : table ;
+  width : 90% ;
+  margin : auto ;
+}
+div.tab_row{
+  display : table-row ;
+}
+div.tab_cell{
+  display : table-cell ;
+  width : 33% ;
+}
+h3{
+  text-align : center ;
+}
