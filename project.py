@@ -3,9 +3,13 @@ from project_module import project_object, image_object, link_object, challenge_
 p = project_object('neuron', 'Neuron simulator')
 p.domain = 'http://www.aidansean.com/'
 p.path = 'neuron'
-p.preview_image_ = image_object('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', 408, 287)
+p.preview_image    = image_object('%s/images/project.jpg'   %p.path, 150, 250)
+p.preview_image_bw = image_object('%s/images/project_bw.jpg'%p.path, 150, 250)
+p.folder_name = 'aidansean'
 p.github_repo_name = 'neuron'
 p.mathjax = True
+p.tags = 'Maths'
+p.technologies = 'CSS,HTML,JavaScript'
 p.links.append(link_object(p.domain, 'neuron', 'Live page'))
 p.introduction = 'One of my friends wanted to develop a genetic algorithm that was capable of learning and adjusting a neuronal network to suit its environment.  I got as far as making a genetic algorithm before abandoning the project as my friend\'s interest seemed to move at the same time as my knowledge of the problem was exhausted.'
 p.overview = '''The algorithm creates a population of "animals" that have varying physiology.  The physiologies that best match the source of "food" reproduce more frequently.  As the source of food changes, so do the inherited physiologies.  The physiologies are represented by cells in a table, each one given a weight.  They are initially randomly distributed, with the weights representing "investment" in the food source.
